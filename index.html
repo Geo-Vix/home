@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GeoVix (GVX) — Print Money. Change Lives.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>GeoVix (GVX)</header>
+  <p class="tagline">Print Money. Change Lives.</p>
+
+  <div class="btn-group">
+    <a href="https://pancakeswap.finance/swap?outputCurrency=0x143659512c8Ad5d46268DAD30EEc9982241fD4BF" target="_blank" rel="noopener noreferrer" class="buy-btn">Buy with BNB</a>
+    <a href="https://buy.moonpay.com/?apiKey=YOUR_API_KEY&currencyCode=BNB&walletAddress=0x143659512c8Ad5d46268DAD30EEc9982241fD4BF" target="_blank" rel="noopener noreferrer" class="buy-btn">Buy with Fiat</a>
+  </div>
+
+  <div class="price-ticker" id="priceTicker">Loading price...</div>
+
+  <section>
+    <h2>Live Trading Chart</h2>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_12345"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.widget({
+        "width": "100%",
+        "height": 400,
+        "symbol": "BINANCE:GVXBNB", // Replace with your token's trading pair symbol
+        "interval": "60",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",
+        "locale": "en",
+        "toolbar_bg": "#0f2027",
+        "enable_publishing": false,
+        "hide_top_toolbar": true,
+        "hide_legend": true,
+        "save_image": false,
+        "container_id": "tradingview_12345"
+      });
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </section>
+
+  <section>
+    <h2>Roadmap</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>🚀 Phase 1: Launch GeoVix Token</li>
+      <li>🔒 Phase 2: Lock Liquidity & Grow Community</li>
+      <li>🌕 Phase 3: Moon Mission</li>
+      <li>🎨 Phase 4: GeoVix NFTs & Staking</li>
+    </ul>
+  </section>
+
+  <footer>&copy; 2025 GeoVix Token. All rights reserved.</footer>
+
+  <script>
+    // Simulated live price ticker
+    function fetchPrice() {
+      // Replace with real API or web3 calls for real price
+      const fakePrice = (0.0000000002 + Math.random()*0.00000000005).toFixed(10);
+      document.getElementById('priceTicker').innerText = `Live Price: ${fakePrice} BNB / GVX`;
+    }
+    fetchPrice();
+    setInterval(fetchPrice, 10000);
+  </script>
+</body>
+</html>
