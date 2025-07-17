@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, #00FFC2, #0062FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+}
+.tagline {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0 40px;
+    color: #ccc;
+}
+.button {
+    display: inline-block;
+    background: #00FFC2;
+    color: #0d0d0d;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.button:hover {
+    background: #00cfa2;
+}
+.section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00FFC2;
+}
+.tokenomics, .roadmap {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px;
+}
+.tokenomics p, .roadmap p {
+    margin-bottom: 10px;
+}
+.price {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #00FFC2;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}

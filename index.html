@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoVix (GVX) - Print Money. Change Lives.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        GeoVix (GVX)
+    </header>
+    <p class="tagline">Print Money. Change Lives.</p>
+    <div style="text-align: center;">
+        <a href="https://pancakeswap.finance/swap?outputCurrency=GVX_CONTRACT_ADDRESS_HERE" class="button" target="_blank">Buy GVX</a>
+    </div>
+
+    <div class="section">
+        <h2>Live Price</h2>
+        <div class="price" id="price">Loading...</div>
+    </div>
+
+    <div class="section tokenomics">
+        <h2>Tokenomics</h2>
+        <p>Total Supply: 23,000,000,000 GVX</p>
+        <p>Ryan: 6.5B GVX (~28.26%)</p>
+        <p>George: 3.5B GVX (~15.2%)</p>
+        <p>Leo: 1.75B GVX (~7.6%)</p>
+        <p>Darragh: 750M GVX (~3.26%)</p>
+        <p>Liquidity Pool: 500M GVX + BNB</p>
+    </div>
+
+    <div class="section roadmap">
+        <h2>Roadmap</h2>
+        <p>Phase 1: Launch GeoVix Token</p>
+        <p>Phase 2: Lock Liquidity & Grow Community</p>
+        <p>Phase 3: Moon Mission 🚀</p>
+        <p>Phase 4: GeoVix NFTs & Staking</p>
+    </div>
+
+    <footer>
+        &copy; 2025 GeoVix Token. All Rights Reserved.
+    </footer>
+
+    <script>
+        async function fetchPrice() {
+            try {
+                const price = 0.0000000002;
+                document.getElementById('price').innerText = `${price} BNB / GVX`;
+            } catch (err) {
+                document.getElementById('price').innerText = "Price unavailable";
+            }
+        }
+        fetchPrice();
+        setInterval(fetchPrice, 10000);
+    </script>
+</body>
+</html>
